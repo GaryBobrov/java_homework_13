@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RadioTest" time="0.116" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RadioTest" time="0.204" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\bobro\AppData\Local\Temp\surefire15239745850824463969\surefirebooter2595832454394145665.jar C:\Users\bobro\AppData\Local\Temp\surefire15239745850824463969 2023-03-09T23-44-36_063-jvmRun1 surefire304292452068229943tmp surefire_03071346305801875197tmp"/>
+    <property name="sun.java.command" value="C:\Users\bobro\AppData\Local\Temp\surefire1390393340303672218\surefirebooter16537777417287575278.jar C:\Users\bobro\AppData\Local\Temp\surefire1390393340303672218 2023-03-10T00-22-05_189-jvmRun1 surefire5115622299628099418tmp surefire_014486125051399140255tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\TestQA\IdeaProjects\MavenQA-5\target\test-classes;C:\TestQA\IdeaProjects\MavenQA-5\target\classes;C:\Users\bobro\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.0\junit-jupiter-5.8.0.jar;C:\Users\bobro\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0\junit-jupiter-api-5.8.0.jar;C:\Users\bobro\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\bobro\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0\junit-platform-commons-1.8.0.jar;C:\Users\bobro\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\bobro\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.0\junit-jupiter-params-5.8.0.jar;C:\Users\bobro\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.0\junit-jupiter-engine-5.8.0.jar;C:\Users\bobro\.m2\repository\org\junit\platform\junit-platform-engine\1.8.0\junit-platform-engine-1.8.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\bobro\AppData\Local\Temp\surefire15239745850824463969\surefirebooter2595832454394145665.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\bobro\AppData\Local\Temp\surefire1390393340303672218\surefirebooter16537777417287575278.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.17+8"/>
@@ -61,14 +61,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldNextRadioStation" classname="RadioTest" time="0.078"/>
-  <testcase name="shouldNotSetRadioStationAboveMax2" classname="RadioTest" time="0"/>
-  <testcase name="shouldNotSetRadioStationAboveMin2" classname="RadioTest" time="0.002"/>
-  <testcase name="shouldNotSetRadioStationAboveMax" classname="RadioTest" time="0.001"/>
-  <testcase name="shouldNotSetRadioStationAboveMin" classname="RadioTest" time="0.001"/>
-  <testcase name="shouldPrevRadioStation" classname="RadioTest" time="0.001"/>
-  <testcase name="shouldNextRadioStation2" classname="RadioTest" time="0.001"/>
-  <testcase name="shouldSetRadioStation" classname="RadioTest" time="0.001"/>
-  <testcase name="shouldPrevRadioStation2" classname="RadioTest" time="0.001"/>
-  <testcase name="shouldSetToMaxRadioStation" classname="RadioTest" time="0.001"/>
+  <testcase name="shouldSetPrevRadioStation" classname="RadioTest" time="0.111"/>
+  <testcase name="shouldNotSetRadioStationMax" classname="RadioTest" time="0.001"/>
+  <testcase name="shouldNotSetRadioStationMin" classname="RadioTest" time="0.002"/>
+  <testcase name="shouldNotSetPrevRadioStation" classname="RadioTest" time="0.001"/>
+  <testcase name="shouldNotSetRadioStationAboveMax" classname="RadioTest" time="0.002"/>
+  <testcase name="shouldNotSetRadioStationBelowMin" classname="RadioTest" time="0.003"/>
+  <testcase name="shouldSetNextRadioStation" classname="RadioTest" time="0.002"/>
+  <testcase name="shouldSetRadioStation" classname="RadioTest" time="0.003"/>
+  <testcase name="shouldNotSetNextRadioStation" classname="RadioTest" time="0"/>
+  <testcase name="shouldSetToMaxRadioStation" classname="RadioTest" time="0"/>
 </testsuite>

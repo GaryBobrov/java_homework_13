@@ -16,7 +16,7 @@ class RadioTest {
     }
 
     @Test
-    public void shouldNotSetRadioStationAboveMax() {
+    public void shouldNotSetRadioStationMax() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(9);
@@ -28,7 +28,7 @@ class RadioTest {
     }
 
     @Test
-    public void shouldNotSetRadioStationAboveMax2() {
+    public void shouldNotSetRadioStationAboveMax() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(10);
@@ -40,7 +40,7 @@ class RadioTest {
     }
 
     @Test
-    public void shouldNotSetRadioStationAboveMin() {
+    public void shouldNotSetRadioStationMin() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(0);
@@ -52,7 +52,7 @@ class RadioTest {
     }
 
     @Test
-    public void shouldNotSetRadioStationAboveMin2() {
+    public void shouldNotSetRadioStationBelowMin() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(-1);
@@ -64,7 +64,7 @@ class RadioTest {
     }
 
     @Test
-    public void shouldNextRadioStation() {
+    public void shouldNotSetNextRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(9);
@@ -78,7 +78,7 @@ class RadioTest {
     }
 
     @Test
-    public void shouldNextRadioStation2() {
+    public void shouldSetNextRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(0);
@@ -92,7 +92,7 @@ class RadioTest {
     }
 
     @Test
-    public void shouldPrevRadioStation() {
+    public void shouldNotSetPrevRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(0);
@@ -106,7 +106,7 @@ class RadioTest {
     }
 
     @Test
-    public void shouldPrevRadioStation2() {
+    public void shouldSetPrevRadioStation() {
         Radio radio = new Radio();
 
         radio.setCurrentRadioStation(9);

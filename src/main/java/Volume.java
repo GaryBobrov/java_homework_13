@@ -16,20 +16,24 @@ public class Volume {
     }
 
     public void increaseVolume() {
-        if (currentVolume >= 0) {
+        if (currentVolume < 100) {
             currentVolume = currentVolume + 1;
         }
         if (currentVolume >= 100) {
-            currentVolume = 100;
+            currentVolume = currentVolume * 1;
         }
     }
 
     public void decreaseVolume() {
-        if (currentVolume <= 100) {
+        if (currentVolume > 0) {
             currentVolume = currentVolume - 1;
         }
         if (currentVolume <= 0) {
-            currentVolume = 0;
+            currentVolume = currentVolume * 1;
         }
+    }
+
+    public void setToMaxVolume() {
+        currentVolume = 100;
     }
 }

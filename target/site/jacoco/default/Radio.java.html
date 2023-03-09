@@ -18,24 +18,22 @@
     public void nextRadioStation() {
 <span class="fc bfc" id="L19" title="All 2 branches covered.">        if (currentRadioStation &lt; 9) {</span>
 <span class="fc" id="L20">            currentRadioStation = currentRadioStation + 1;</span>
+        } else {
+<span class="fc" id="L22">            currentRadioStation = 0;</span>
         }
-        else {
-<span class="fc" id="L23">            currentRadioStation = 0;</span>
-        }
-<span class="fc" id="L25">    }</span>
+<span class="fc" id="L24">    }</span>
 
     public void prevRadioStation() {
-<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (currentRadioStation &gt;= 1) {</span>
-<span class="fc" id="L29">            currentRadioStation = currentRadioStation - 1;</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        if (currentRadioStation &gt;= 1) {</span>
+<span class="fc" id="L28">            currentRadioStation = currentRadioStation - 1;</span>
+        } else {
+<span class="fc" id="L30">            currentRadioStation = 9;</span>
         }
-        else {
-<span class="fc" id="L32">            currentRadioStation = 9;</span>
-        }
-<span class="fc" id="L34">    }</span>
+<span class="fc" id="L32">    }</span>
 
     public void setToMaxRadioStation() {
-<span class="fc" id="L37">        currentRadioStation = 9;</span>
-<span class="fc" id="L38">    }</span>
+<span class="fc" id="L35">        currentRadioStation = 9;</span>
+<span class="fc" id="L36">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
