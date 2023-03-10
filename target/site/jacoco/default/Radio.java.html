@@ -35,5 +35,43 @@
 <span class="fc" id="L35">        currentRadioStation = 9;</span>
 <span class="fc" id="L36">    }</span>
 
+    private int currentVolume;
+
+    public int getCurrentVolume() {
+<span class="fc" id="L41">        return currentVolume;</span>
+    }
+
+    public void setCurrentVolume(int newCurrentVolume) {
+<span class="fc bfc" id="L45" title="All 2 branches covered.">        if (newCurrentVolume &lt; 0) {</span>
+<span class="fc" id="L46">            return;</span>
+        }
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        if (newCurrentVolume &gt; 100) {</span>
+<span class="fc" id="L49">            return;</span>
+        }
+<span class="fc" id="L51">        currentVolume = newCurrentVolume;</span>
+<span class="fc" id="L52">    }</span>
+
+    public void increaseVolume() {
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        if (currentVolume &lt; 100) {</span>
+<span class="fc" id="L56">            currentVolume = currentVolume + 1;</span>
+        }
+<span class="fc bfc" id="L58" title="All 2 branches covered.">        if (currentVolume &gt;= 100) {</span>
+<span class="fc" id="L59">            currentVolume = currentVolume * 1;</span>
+        }
+<span class="fc" id="L61">    }</span>
+
+    public void decreaseVolume() {
+<span class="fc bfc" id="L64" title="All 2 branches covered.">        if (currentVolume &gt; 0) {</span>
+<span class="fc" id="L65">            currentVolume = currentVolume - 1;</span>
+        }
+<span class="fc bfc" id="L67" title="All 2 branches covered.">        if (currentVolume &lt;= 0) {</span>
+<span class="fc" id="L68">            currentVolume = currentVolume * 1;</span>
+        }
+<span class="fc" id="L70">    }</span>
+
+    public void setToMaxVolume() {
+<span class="fc" id="L73">        currentVolume = 100;</span>
+<span class="fc" id="L74">    }</span>
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

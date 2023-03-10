@@ -35,4 +35,42 @@ public class Radio {
         currentRadioStation = 9;
     }
 
+    private int currentVolume;
+
+    public int getCurrentVolume() {
+        return currentVolume;
+    }
+
+    public void setCurrentVolume(int newCurrentVolume) {
+        if (newCurrentVolume < 0) {
+            return;
+        }
+        if (newCurrentVolume > 100) {
+            return;
+        }
+        currentVolume = newCurrentVolume;
+    }
+
+    public void increaseVolume() {
+        if (currentVolume < 100) {
+            currentVolume = currentVolume + 1;
+        }
+        if (currentVolume >= 100) {
+            currentVolume = currentVolume * 1;
+        }
+    }
+
+    public void decreaseVolume() {
+        if (currentVolume > 0) {
+            currentVolume = currentVolume - 1;
+        }
+        if (currentVolume <= 0) {
+            currentVolume = currentVolume * 1;
+        }
+    }
+
+    public void setToMaxVolume() {
+        currentVolume = 100;
+    }
+
 }
