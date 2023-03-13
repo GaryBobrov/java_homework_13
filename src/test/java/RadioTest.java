@@ -5,7 +5,7 @@ class RadioTest {
 
     @Test
     public void test () {
-        Radio radio = new Radio(10);
+        Radio radio = new Radio();
 
         Assertions.assertEquals(0, radio.getCurrentRadioStation());
         Assertions.assertEquals(0, radio.getMinRadioStation());
@@ -14,7 +14,7 @@ class RadioTest {
 
     @Test
     public void shouldSetRadioStation() {
-        Radio radio = new Radio(10);
+        Radio radio = new Radio();
 
         radio.setCurrentRadioStation(4);
 
@@ -26,7 +26,7 @@ class RadioTest {
 
     @Test
     public void shouldNotSetRadioStationMax() {
-        Radio radio = new Radio(10);
+        Radio radio = new Radio();
 
         radio.setCurrentRadioStation(9);
 
@@ -38,9 +38,9 @@ class RadioTest {
 
     @Test
     public void shouldNotSetRadioStationAboveMax() {
-        Radio radio = new Radio(10);
+        Radio radio = new Radio(11);
 
-        radio.setCurrentRadioStation(10);
+        radio.setCurrentRadioStation(11);
 
         int expected = 0;
         int actual = radio.getCurrentRadioStation();
@@ -62,7 +62,7 @@ class RadioTest {
 
     @Test
     public void shouldNotSetRadioStationBelowMin() {
-        Radio radio = new Radio(10);
+        Radio radio = new Radio();
 
         radio.setCurrentRadioStation(-1);
 
